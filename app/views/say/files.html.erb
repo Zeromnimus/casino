@@ -1,0 +1,18 @@
+<h1>Список файлов с директории</h1>
+<hr>
+<p>
+	Сейчас <%= @time %> а через час <%= 1.hour.from_now %>
+</p>
+<hr>
+<p>
+	Директория:
+	<ul>
+		<% for file in @files %>
+			<li> File name is: <%= file %> </li>
+		<% end %>
+	</ul>
+</p>
+<hr>
+<p>
+	Сказать <%= link_to("привет", say_hello_path ) %>
+</p>

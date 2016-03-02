@@ -1,0 +1,15 @@
+<h1>Привет от Rails!</h1>
+<hr>
+<p>
+	Сейчас <%= @time %> а через час <%= 1.hour.from_now %>
+</p>
+<hr>
+<p>
+     Сказать <a href="/say/goodbye">досвиданья!</a>
+</p>
+<p>
+	Сказать <%= link_to("файлы", say_files_path) %>
+</p>
+<p>
+	Сказать <%= link_to("досвидания", say_goodbye_path ) %> еще раз и через path!
+</p>
